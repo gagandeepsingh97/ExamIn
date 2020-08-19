@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ExamIn</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <a href = "admin-login.component.html" id = "ExamIn">ExamIn</a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">About</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Header done-->
+        <section class="space"></section>
+        <div class="admin-login">
+            <div id="admin-image">
+                <img id="admin-image1" src="/assets/img/a1.svg">
+                <img id="admin-image2" src="/assets/img/a2.svg">
+            </div>
+            <div id="admin-details">
+                <h1>ADMIN LOGIN</h1>
+                <label for="aname"><b>Admin ID</b></label>
+                <input type="text" placeholder="Enter Admin ID" name="aname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <a routerLink="/admin-add-test" routerLinkActive="active"><button type="submit">Login</button></a>
+                
+                <button type="submit">Forget Password</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+        </div>
+        <footer>
+            <p>@2020 Larsen & Toubro InfoTech Limited</p>
+          </footer>
+    </body>
+</html>

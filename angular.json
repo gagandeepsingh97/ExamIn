@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ExamIn"
+    }
+  },
+  "defaultProject": "ExamIn",
+  "cli": {
+    "analytics": "c3ab80bc-3e6e-4f81-8298-82aaed7a2413"
+  }
 }

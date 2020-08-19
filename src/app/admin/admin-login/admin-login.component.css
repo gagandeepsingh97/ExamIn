@@ -1,0 +1,132 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+body {
+	background: white;
+	color:#000000;
+	font-family:'Alegreya',sans-serif;
+	margin:0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+}
+header {
+    background-color: darkcyan;
+    height:100px;
+}
+.header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+}
+#ExamIn {
+    padding:  0 0 0 10px;
+    font-size: 175%;
+    color: white;
+    margin: 5px;
+	float: left;
+	width: 60px;
+    height:60px;
+    text-decoration: none;
+}
+nav{
+	float: right;
+}
+ul{
+	list-style-type: none;
+}   
+nav ul li{
+	font-size: 150%;
+	display: inline-block;
+	padding: 10px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: wheat;
+}
+.active:hover{
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-radius: 5px;
+}
+/*--nav ends--*/
+.space{
+    height: 105px;
+    background-color: white;
+}
+.admin-login{
+    background-color: white;
+    height: 300px;
+    width: 60%;
+    padding: 0;
+    margin-left: 20%;
+    position: center;
+    align-items: center;
+    text-align: center;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+}
+#admin-image{
+    position: relative;
+    height: 225px;
+    width: 25%;
+}
+#admin-image1{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+}
+#admin-image2{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    opacity: 0;
+}
+#admin-image2:hover{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    opacity: 100%;
+}
+#admin-details{
+    height: 300px;
+    width: 50%;
+    border-style: solid;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: darkcyan;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+footer{
+    background-color: darkcyan;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
