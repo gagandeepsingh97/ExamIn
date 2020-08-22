@@ -1,3 +1,7 @@
+import { SubjectListComponent } from './student/subject-list/subject-list.component';
+import { InstructionComponent } from './student/instruction/instruction.component';
+import { ReportComponent } from './student/report/report.component';
+import { QuestionComponent } from './student/question/question.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +20,8 @@ import { HomeComponent } from './student/home/home.component';
 import { LoginPageComponent } from './student/login-page/login-page.component';
 import { RegistrationPageComponent } from './student/registration-page/registration-page.component';
 import { SelectionPageComponent } from './student/selection-page/selection-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CountdownModule } from 'ngx-countdown';
 
 
 
@@ -35,11 +41,17 @@ import { SelectionPageComponent } from './student/selection-page/selection-page.
     HomeComponent,
     LoginPageComponent,
     RegistrationPageComponent,
-    SelectionPageComponent
+    SelectionPageComponent,
+    QuestionComponent,
+    ReportComponent,
+    InstructionComponent,
+    SubjectListComponent
 ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    CountdownModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

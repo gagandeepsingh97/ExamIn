@@ -13,6 +13,10 @@ import { LoginPageComponent } from './student/login-page/login-page.component';
 import { RegistrationPageComponent } from './student/registration-page/registration-page.component';
 import { HomeComponent } from './student/home/home.component';
 import { SelectionPageComponent } from './student/selection-page/selection-page.component';
+import { SubjectListComponent } from './student/subject-list/subject-list.component';
+import { ReportComponent } from './student/report/report.component';
+import { QuestionComponent } from './student/question/question.component';
+import { InstructionComponent } from './student/instruction/instruction.component';
 
 const routes: Routes = [
   //{path: '', redirectTo:'/admin-login', pathMatch:'full'},
@@ -23,13 +27,17 @@ const routes: Routes = [
   {path:'page4', component: Page4Component},
   {path:'choose-level', component: ChooseLevelComponent},
   {path:'forgot-pass', component: ForgotPassComponent},
-{path:'browse', component:BrowseComponent},
-{path:'add-ques', component: AddQuesComponent},
-{path:'add-ques-single', component: AddQuesSingleComponent},
-{path:'login',component:LoginPageComponent},
+  {path:'browse', component:BrowseComponent},
+  {path:'add-ques', component: AddQuesComponent},
+  {path:'add-ques-single', component: AddQuesSingleComponent},
+  {path:'login',component:LoginPageComponent},
   {path:'registration',component:RegistrationPageComponent},
   {path:'home',component:HomeComponent},
-  {path:'selection',component:SelectionPageComponent}
+  {path:'selection',component:SelectionPageComponent},
+  {path: 'question', component: QuestionComponent },
+  {path: 'report', component: ReportComponent },
+  {path: 'subjectList', component: SubjectListComponent },
+  {path: 'instruction', component: InstructionComponent },
 ];
 
 @NgModule({

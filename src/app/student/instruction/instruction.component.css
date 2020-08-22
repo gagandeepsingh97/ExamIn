@@ -1,0 +1,103 @@
+
+	body {
+        background-color: 	#dddddd;
+  }
+  a {
+      text-decoration: none;
+  }
+  .Header{
+      padding-top:		5px;
+      padding-bottom:		5px;
+      background-color: 	white;
+        text-align: 		center;
+        width: 				80%;
+      margin: 			auto;
+  }
+  .topnav{
+      background-color:	darkcyan;
+      overflow: 			hidden;
+      padding-bottom:		10px;
+  }
+  .topnav a{
+      float:				left;
+      color:				white;
+      text-align: 		center;
+      padding: 			10px 10px;
+        text-decoration:	none;
+        font-size: 			15px;
+  }
+  .topnav a:hover {
+        background-color:	white;
+        color: 				black;
+  }
+  .subList, .instructionBody{
+      text-align:			center;
+      margin:				auto;
+      padding: 			10px;
+      background-color: 	white;
+        text-align: 		left;
+        width: 				78.4%;
+        font-size: 			15px;
+      overflow: 			hidden;
+      box-sizing:			box-border;
+  }
+
+  .subButton{
+        background-color: 	white;
+        color:				darkcyan;
+        border:				2px solid darkcyan; 
+        padding: 			15px 32px;
+        cursor: 			pointer;
+      width:				20%;
+        text-decoration:	none;
+        margin:				4px 2px;
+        
+  }
+  .subButton:hover {/*.subList button[class=subButton]:hover {*/
+       background-color: 	darkcyan;
+        border: 			none;
+        color: 				white;
+
+  }
+  
+  .startbtn, .logoutBtn, .nextBtn, .SaveBtn, .submitbtn {
+
+      background-color: 	white;
+        color:				darkcyan;
+        border:				2px solid darkcyan; 
+        padding: 			15px 32px 15px;
+        cursor: 			pointer;
+      width:				20%;
+        text-decoration:	none;
+        margin:				4px 2px;
+  }
+  .startbtn:hover, .logoutBtn:hover, .nextBtn:hover, .SaveBtn:hover, .submitbtn:hover {
+       background-color: 	darkcyan;
+        border: 			none;
+        color: 				white;
+  }
+  
+  .instrcutionList{
+
+      list-style-type:	upper-roman;
+
+  }
+  
+  .footer{
+      font:				sans-serif;
+      padding:			5px;
+      background-color: 	darkcyan;
+      color:				white;
+        text-align: 		center;
+        font-size: 			10px;
+        width: 				79%;
+      margin: 			auto;
+      bottom:				5px;
+      overflow: 			auto;
+  }
+  
+  
+  span.psw {
+      float: 				right;
+      padding-top: 		16px;
+  }
