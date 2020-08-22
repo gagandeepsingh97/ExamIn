@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+ <!-- The directory of the CSS file -->
+<script type="text/javascript" src="captcha.js"></script> <!-- The directory of the JS file -->
+<title>ADMIN </title>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <a routerLink='/admin-login'>Home</a>
+            <a href="#news">Support</a>
+            <a href="#logout">Logout</a>
+          </ul>
+        </div>
+        <br>
+        <br>
+
+
+    <div class="content">
+        <h3><u>Forgot Password</u></h3>
+    <body onLoad="ChangeCaptcha()" > <!-- As the body loads, the function runs and Captcha is loaded. -->
+        Enter Email:
+        <input type="text">
+        <br>
+        <br>
+        <input type="text" id="randomfield" disabled> <!-- Change this ID to the desired one, be sure to change it in the CSS and JS files too -->
+            <br><br>
+            Enter Captcha:
+            <input id="CaptchaEnter" size="20" maxlength="6" /> <!-- Change maxlength to the size you wanted your Captcha to be -->
+        
+            <br><br>
+        
+            <button onclick="check()">Done</button>
+  
+    </body>
+
+    <div class="footer">
+        <footer>
+              <p>2020 Larsen & Tourbo InfoTech Limited</p>
+        </footer> 
+        </div>
+

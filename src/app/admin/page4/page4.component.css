@@ -1,0 +1,52 @@
+.header{
+    text-align: center;
+    
+}
+.topnav{
+  background-color:	darkcyan;
+  overflow: 			hidden;
+  padding-bottom:		10px;
+  width: 100%;
+}
+.topnav a{
+  float:				left;
+  color:				white;
+  text-align: 		center;
+  padding: 			10px 10px;
+    text-decoration:	none;
+    font-size: 			15px;
+}
+.topnav a:hover {
+    background-color:	white;
+    color: 				black;
+}
+
+
+
+  .content {
+    text-align: center;
+    margin-top: 900px;
+    max-width: 500px;
+    margin: auto;
+    background:white;
+    padding: 10px;
+    
+
+
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:darkcyan;
+    color: white;
+ }
+.main{
+    border: 5px solid darkcyan;
+    margin-top: 900px;
+    max-width: 400px;
+    margin: auto;
+    background:white;
+    padding: 10px;
+}

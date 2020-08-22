@@ -1,0 +1,46 @@
+
+.topnav{
+    background-color:	darkcyan;
+    overflow: 			hidden;
+    padding-bottom:		10px;
+    width: 100%;
+  }
+  .topnav a{
+    float:				left;
+    color:				white;
+    text-align: 		center;
+    padding: 			10px 10px;
+      text-decoration:	none;
+      font-size: 			15px;
+  }
+  .topnav a:hover {
+      background-color:	white;
+      color: 				black;
+  }
+    .content {
+      text-align: center;
+      margin-top: 900px;
+      max-width: 300px;
+      margin: auto;
+      background:white;
+      padding: 10px;
+      border: 5px solid darkcyan;
+  
+  
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:darkcyan;
+      color: white;
+   }
+    .button{
+        display:inline-block;
+      height: 100px;
+      width: 100px;
+      padding:5px;
+      border: 1px solid darkcyan;
+      background-color: lightgray;
+  }
