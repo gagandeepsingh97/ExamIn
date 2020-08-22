@@ -12,6 +12,11 @@ import { AddQuesSingleComponent } from './admin/add-ques-single/add-ques-single.
 import { BrowseComponent } from './admin/browse/browse.component';
 import { AddQuesComponent } from './admin/add-ques/add-ques.component';
 import { Page4Component } from './admin/page4/page4.component';
+import { HomeComponent } from './student/home/home.component';
+import { LoginPageComponent } from './student/login-page/login-page.component';
+import { RegistrationPageComponent } from './student/registration-page/registration-page.component';
+import { SelectionPageComponent } from './student/selection-page/selection-page.component';
+
 
 
 @NgModule({
@@ -26,7 +31,11 @@ import { Page4Component } from './admin/page4/page4.component';
     BrowseComponent,
     Page4Component,
     AddQuesComponent,
-    AddQuesSingleComponent
+    AddQuesSingleComponent,
+    HomeComponent,
+    LoginPageComponent,
+    RegistrationPageComponent,
+    SelectionPageComponent
 ],
   imports: [
     BrowserModule,

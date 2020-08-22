@@ -1,0 +1,199 @@
+
+.img {
+    opacity: 1.0;
+        
+  }
+  
+  .header {
+  
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  
+  
+  .text {
+      
+    white-space:nowrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  
+  }
+  
+  
+  
+  .greycard
+  {
+      overflow:hidden;
+      background-color: #e8e8e8;
+      width: 100%;
+      margin: auto;
+  }
+  
+  .greycard ul
+  
+  {
+      
+      list-style-type: none; /*no style*/
+  }
+  
+  .greycard li
+  {
+      
+      white-space:nowrap;
+      height: 50px;
+      width:100px;	
+      float: left;
+      color: #484848;
+      padding-right:80px;
+      padding-left:80px;
+      text-decoration: none;
+      letter-spacing:0.4px;
+      margin-top:0%; 
+      
+  }
+  
+  .cards 
+  {
+      
+    box-sizing: border-box;
+  }
+  
+  .column {
+  
+    float: left;
+    width: 25%;
+    padding: 50px 20px;
+    padding-left: 60px;
+    padding-right: 40px;
+    text-align: center;
+  
+    
+  }
+  
+  .row {margin: 0 0px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+      
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    height:100px;
+    
+  }
+  
+  .hr
+  {
+      color:#dbdbdb;
+      opacity: 0.2;
+  }
+  
+  
+  .content p
+  {
+      text-align: center;
+      font-size: 35px;
+  }
+  
+  
+  
+  .colorcard
+  {
+      overflow:hidden;
+      width: 90%;
+      margin: auto;
+  }
+  
+  .colorcard ul
+  
+  {
+      
+      list-style-type: none; /*no style*/
+  }
+  
+  .colorcard li
+  {
+      
+      
+      color: #000000;
+      float: left;
+      margin-top:0%; 
+      padding-bottom: 20px;
+      padding-top: 20px;
+      margin-right: 20px;
+      
+  }
+  
+  .content1
+  {
+      width: 600px;
+      text-align: left;
+      overflow:hidden;
+      margin-left: auto ;
+      margin-right: auto ;
+      padding-top: 50px;
+  
+      
+      
+  }
+  
+  .content2
+  {
+          width: 600px;
+      text-align: left;
+      overflow:hidden;
+      margin-left: auto ;
+      margin-right: auto ;
+      padding-top: 50px;
+      
+      
+      
+  }
+  
+  .content3
+  {
+      width: 600px;
+      text-align: left;
+      overflow:hidden;
+      margin-left: auto ;
+      margin-right: auto ;
+      padding-top: 50px;
+      
+      
+  }
+  
+  .footer
+  {
+      
+      overflow:hidden;
+      background-color:  #e8e8e8;
+      margin: auto;
+  }
+  .footer ul
+  {
+      list-style-type: none; /*no style*/
+  }
+  .footer li
+  {
+     
+      float: right;
+      color: black;
+      padding-right: 60px;
+      height: 60px;
+      text-decoration: none;
+      letter-spacing:1px;
+      
+  }
+  
