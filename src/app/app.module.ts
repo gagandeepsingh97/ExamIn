@@ -4,6 +4,7 @@ import { ReportComponent } from './student/report/report.component';
 import { QuestionComponent } from './student/question/question.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,6 +49,7 @@ import { CountdownModule } from 'ngx-countdown';
     SubjectListComponent
 ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

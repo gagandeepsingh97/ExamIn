@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,7 @@
     "@angular/router": "~10.0.6",
     "angular-particle": "^1.0.4",
     "angular-particle-updated": "^1.0.4-1",
-    "ngx-bootstrap": "^2.0.5",
+    "ngx-bootstrap": "^5.5.0",
     "ngx-countdown": "^10.0.0",
     "particles.js": "^2.0.0",
     "rxjs": "~6.5.5",
