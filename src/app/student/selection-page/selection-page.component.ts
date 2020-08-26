@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./selection-page.component.css']
 })
 export class SelectionPageComponent implements OnInit {
-
+  useName: string;
   constructor() { }
 
   ngOnInit(): void {
+    this.useName = sessionStorage.getItem("userName");
   }
 
 }

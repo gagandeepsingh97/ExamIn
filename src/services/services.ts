@@ -14,7 +14,7 @@ export class Service {
   registerAStudent(student){
       console.log(student);
       console.log("what is happening");
-    let url='http://localhost:8080/registration';
+    let url='http://localhost:8189/registration';
     console.log("what is happening");
     return this.http.post<any>(url,student);
     console.log("what is happening");

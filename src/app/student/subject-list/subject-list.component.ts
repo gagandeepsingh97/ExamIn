@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import {shareService} from "src/services/share.service"
 
 @Component({
@@ -8,7 +9,8 @@ import {shareService} from "src/services/share.service"
 })
 export class SubjectListComponent implements OnInit {
   subjectId:number;
-  constructor(private shareService : shareService) { }
+  tempString: string;
+  constructor(private shareService : shareService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.shareService.returnSubjectValue().subscribe(data=>{
@@ -18,7 +20,11 @@ export class SubjectListComponent implements OnInit {
     });
   }
   setSubjectId(res) {
-    this.subjectId = res;
+    this.tempString = res;
+    // this.http.post<any>('http://localhost:8189/login', res).subscribe(result=>{
+    //   if(result)
+    //     this.subjectId = result;
+    // });
   }
   
 

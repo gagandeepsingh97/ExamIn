@@ -1,5 +1,5 @@
 
-	<div class= "Header"><H1>ExamIn</H1>
+	<section *ngIf = "check=='true'"><div class= "Header"><H1>ExamIn</H1>
 	
 	<div class= "topnav">	
 	<ul >
@@ -19,7 +19,7 @@
 	<br>
 	
 	<div class="instructionBody">
-		<countdown [config]="{ leftTime: 100, format: 'm:s' }"></countdown>
+		<countdown [config]="{ leftTime: 10, format: 'm:s' }" ></countdown>
 	<br>
 		
 	<br>
@@ -44,7 +44,7 @@
 		<input type="radio" id="option4" name="q1" value="4" (change)="onItemChange($event.target.value)">
 		<label for="option4" *ngIf="questions">{{questions[count].option4}}</label><br><br>
 		<!-- <a href="Question.html"> -->
-		<button type="button" class="nextBtn" (click)="counter()" *ngIf = "count < 1">NEXT</button>
+		<button type="button" class="nextBtn" (click)="counter()" *ngIf = "count < 9">NEXT</button>
 		<!-- </a> -->
 		<!-- <a href="Report.html"> -->
 		<button type="button" class="submitbtn" (click)="onSubmit()">SUBMIT</button>
@@ -64,3 +64,5 @@
   		<p>&copy 2020 Larsen & Tourbo InfoTech Limited</p>
 	</footer> 
 	</div>
+</section>
+<div *ngIf="check!='true'">Not Allowed</div>

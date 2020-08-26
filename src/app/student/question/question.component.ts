@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import {shareService} from "src/services/share.service"
 //import { Response } from "src/app/student/question/responseModel";
 import { NgForm } from "@angular/forms";
+import { ResponseModel } from "src/models/responseModel";
 
 @Component({
   selector: 'app-question',
@@ -18,7 +19,7 @@ export class QuestionComponent implements OnInit {
   questions : any;
   ans:number[] = [];
   subject:number;
-  
+  check : String = sessionStorage.getItem("counter");
   count : number = 0 ;
   status;
   constructor(private questionService :QuestionService, private http: HttpClient, private shareService : shareService) {
@@ -35,10 +36,10 @@ export class QuestionComponent implements OnInit {
     this.subject = this.shareService.getSubjectValue();
     this.http.post<any>('http://localhost:8189/getQuestion', 1).subscribe(data=>{this.questions = data;});
 
-    for (let index = 0; index < 2; index++) {
+    for (let index = 0; index < 10; index++) {
       this.ans[index] = 0;
-
     }
+    setTimeout(() => this.onSubmit(),10000);//10 sec
   }
 
   
@@ -52,6 +53,14 @@ export class QuestionComponent implements OnInit {
   }
   onSubmit() {
     //let response1 = new Response(this.ans);
-    this.http.post<any>('http://localhost:8189/saveAnswer', this.ans).subscribe();
+    let data = new ResponseModel();
+    data.answes = this.ans;
+    data.credentials = [];
+    data.credentials.push(sessionStorage.getItem("userId"));
+    data.credentials.push("1");
+    // data.credentials.push(this.subject.toString());
+    this.http.post<any>('http://localhost:8189/saveAnswer', data).subscribe();
+    sessionStorage.setItem("counter","false");
+    window.location.href = "http://localhost:4200/report";
   }
 }

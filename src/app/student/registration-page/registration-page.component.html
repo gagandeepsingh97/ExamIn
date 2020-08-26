@@ -47,8 +47,9 @@
 		
 	    <input class="input" type="text" placeholder="CompletionYear" name="CompYear" [(ngModel)]='student1.yearCompletion' required><br><br>
 	    <br>
-	
-	    <button  class="button button1" type="submit" (click)="registerAStudent()">SUBMIT</button>
+		<a routerLink="/login" routerLinkActive="active">
+		<button  class="button button1" type="submit" (click)="registerAStudent()">SUBMIT</button>
+		</a>
 	    <h1>{{status?.message}}</h1>
 	</form>
 </div>

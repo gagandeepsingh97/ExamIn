@@ -22,11 +22,11 @@
 <h3>Login To</h3> 
 <p>to continue to Examin</p>
 	<form>
-	    <input  class="input" type="text" placeholder="Enter Email" name="uname" required>
+	    <input [(ngModel)]="userName" class="input" type="text" placeholder="Enter Email" name="uname" required>
 	    <br><br>
-	    <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+	    <input [(ngModel)]="password" class="input" type="password" placeholder="Enter Password" name="psw" required>
 		<p class="forgotpass"><a href="forgotPass.html">Forgot Password</a></p><br>
-		<a routerLink="/selection" routerLinkActive="active" ><button type="submit" class="button button1">Submit</button></a><br><br>  
+		<a><button type="submit" class="button button1" (click)="onSubmit()">Submit</button></a><br><br>  
 	    <!-- <button  class="button button1" type="submit" >SUBMIT</button> -->
 	</form>
 </div>
