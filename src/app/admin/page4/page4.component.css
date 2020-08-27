@@ -1,52 +1,92 @@
 .header{
-    text-align: center;
-    
-}
-.topnav{
-  background-color:	darkcyan;
-  overflow: 			hidden;
-  padding-bottom:		10px;
-  width: 100%;
-}
-.topnav a{
-  float:				left;
-  color:				white;
-  text-align: 		center;
-  padding: 			10px 10px;
-    text-decoration:	none;
-    font-size: 			15px;
-}
-.topnav a:hover {
-    background-color:	white;
-    color: 				black;
+  text-align: center;
+  
 }
 
+.heading
+{
+  text-align: center;
+}
+.topsection
+{
 
+padding-right:20px;
+overflow:hidden;
+background-color:#e8e8e8;
+margin: auto;
+}
 
-  .content {
-    text-align: center;
-    margin-top: 900px;
-    max-width: 500px;
-    margin: auto;
-    background:white;
-    padding: 10px;
-    
+.topsection ul
+{
+list-style-type: none; 
+}
 
+.topsection a 
+{
+  
+float: left;
+color: black;
+padding-right:40px;
+height: 40px;
+text-decoration: none;
+letter-spacing:0.5px;
+}
 
-  }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:darkcyan;
-    color: white;
- }
-.main{
-    border: 5px solid darkcyan;
-    margin-top: 900px;
-    max-width: 400px;
-    margin: auto;
-    background:white;
-    padding: 10px;
+.rightalign a
+{
+float: right;
+padding-right: 15px;
+}
+
+.buttons
+{
+
+text-align: center;
+}
+
+.buttons button
+{
+align-content:center;
+background-color: darkcyan ; 
+border: none;
+color: white; 
+padding: 5px 40px;
+display: inline-block;
+font-size: 15px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+
+}
+
+.input
+{
+  margin: 4px 2px;
+  display: inline-block;
+  font-size: 15px;
+
+}
+
+.footer
+{
+  
+  overflow:hidden;
+  background-color: #e8e8e8;
+  margin: auto;
+}
+.footer ul
+{
+  list-style-type: none; 
+}
+.footer li
+{
+   
+  float: right;
+  color: black;
+  padding-right: 60px;
+  height: 60px;
+  text-decoration: none;
+  letter-spacing:1px;
+  
 }

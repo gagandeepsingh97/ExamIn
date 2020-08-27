@@ -1,4 +1,18 @@
+.beautifyUser{
+	margin: auto;
+	/* background-image: linear-gradient(darkcyan, lightblue); */
+	text-align: center;
+	width:50%;
+	border: 3px solid darkcyan;
 
+}
+.beautifyUser:hover {
+	margin: auto;
+	background-color: 	darkcyan;
+	border: 			none;
+	border: 		3px solid darkcyan;
+
+}
 .topsection
 {
 	

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Report } from "src/models/report";
 import { shareService } from 'src/services/share.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-report',
@@ -9,11 +10,12 @@ import { shareService } from 'src/services/share.service';
   styleUrls: ['./report.component.css']
 })
 export class ReportComponent implements OnInit {
+  [x: string]: any;
 
-  marks : any;
-  data1:Report;
+   data1:Report;
   pass:boolean;
   fail:boolean;
+  marks:any;
 
   validateForm(){
     
@@ -28,21 +30,16 @@ export class ReportComponent implements OnInit {
     this.data1= new Report();
     this.data1.studentId= (sessionStorage.getItem("userId"));
    this.data1.subjectId =1;
-   console.log(  this.data1.subjectId);
+   console.log(this.data1.subjectId);
     console.log(this.data1);
-    // data.credentials.push(this.subject.toString());
-    this.http.post<any>('http://localhost:8189/calculateMarks', this.data1).subscribe(data=>{this.marks = data;
-    console.log(data);
-    if(this.marks>30)
-    {
-      this.pass=true;
-    }
-    else
-    {
-      this.fail=true;
-    }
-    
-  });
+    this.marks = sessionStorage.getItem("marks");
+    this.marks>30?this.pass=true:this.fail=true;
   }
 
+  logout():void {
+    // sessionStorage.clear();
+    // this.router.navigate(['/home']);
+    window.location.href = "http://localhost:4200/home";
+  }
+  
 }

@@ -21,10 +21,11 @@ export class SubjectListComponent implements OnInit {
   }
   setSubjectId(res) {
    this.tempString = res;
-    // this.http.post<any>('http://localhost:8189/login', res).subscribe(result=>{
-    //   if(result)
-    //     this.subjectId = result;
-    // });
+     this.http.post<any>('http://localhost:8189/getExamPaperId', res).subscribe(result=>{
+       if(result)
+         this.subjectId = result;
+         sessionStorage.setItem("subjectId",this.subjectId.toString());
+     });
  //   this.shareService.id=1;
   }
   

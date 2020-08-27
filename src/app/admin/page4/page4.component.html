@@ -1,100 +1,56 @@
-
 <head>
-<meta charset="ISO-8859-1">
-<title>ADMIN </title>
-</head>
-<body>
-    <div class="topnav">
-        <ul>
-            <a routerLink='/admin-login'>Home</a>
-            <a href="#news">Support</a>
-            <a href="#logout">Logout</a>
-          </ul>
+    <meta charset="ISO-8859-1">
+    <title>ADMIN </title>
+    </head>
+    <body class="body"marginheight="0" marginwidth="0" >
+    
+        <div class="topsection">
+            <ul>
+                <li><a href="/home" style= "font-size:120%;">ABOUT US</a></li>
+                <li><a href="/support" style= "font-size:120%;">SUPPORT</a></li>
+                <li class="rightalign"><a href="/login" style= "font-size:120%;">LOGOUT</a></li>
+            </ul>
+        </div><br><br><br><br><br>
+    
+    
+        <div class="heading">
+            <h2>Please enter the field for viewing student details</h2>
         </div>
-        <br>
-        <br>
+        <div class="buttons">
+            <input class="input" type="text" placeholder="Marks" name="marks"required>
+            <a routerLink="/subjectList" routerLinkActive="active"><button type="submit">View</button></a><br><br> 
 
+            <input class="input" [(ngModel)]="city" type="text" placeholder="City" name="marks"required>
+        <a (click)="viewCity()"><button type="submit">View</button></a><br><br>
 
-    <div class="main">
-    <h2 class="header"><u> Search Students Report</u></h2>
-    <div class="content">
-        <label for="techno">Technology:</label>
-        <select name="techno" >
-            <option>HTML</option>
-            <option>C#</option>
-            <option>JAVA</option>
-            <option>MYSQL</option>
-            <option>CSS</option>
-            <option>PYTHON</option>
-        </select>
-    </div>
-    <div class="content">
-        <label for="state">State:</label>
-        <select name="state" >
-            <option>Andra Pradesh</option>
-            <option>Arunachal Pradesh</option>
-            <option>Assam</option>
-            <option>Bihar</option>
-            <option>Chattisgarh</option>
-            <option>Delhi</option>
-            <option>Goa</option>
-            <option>Gujarat</option>
-            <option>Haryana</option>
-            <option>Himachal Pradesh</option>
-            <option>Jharkhand</option>
-            <option>Karnataka</option>
-            <option>Kerela</option>
-            <option>Madhya Pradesh</option>
-            <option>Maharashtra</option>
-            <option>Manipur</option>
-            <option>Meghalaya</option>
-            <option>Mizoram</option>
-            <option>Nagaland</option>
-            <option>Odisha</option>
-            <option>Punjab</option>
-            <option>Rajasthan</option>
-            <option>Sikkim</option>
-            <option>Tamil Nadu</option>
-            <option>Telengana</option>
-            <option>Tripura</option>
-            <option>Uttrakhand</option>
-            <option>Uttar Pradesh</option>
-            <option>West Bengal</option>
-            
-        </select>
-    </div>
-    <div class="content">
-        City:
-        <input placeholder="Enter City">
-    </div>
-    <div class="content">
-        <label for="level">Level:</label>
-        <select name="level" >
-            <option>1:Easy</option>
-            <option>2:Medium</option>
-            <option>3:Hard</option>
-        </select>
-    </div>
-    <div class="content">
-        <label for="marks">Marks:</label>
-        <select name="marks" >
-            <option><10</option>
-            <option><20</option>
-            <option><30</option>
-            <option><40</option>
-            <option><50</option>
-            <option><60</option>
-            <option><70</option>
-            <option><80</option>
-            <option><90</option>
-            <option><100</option>
-        </select>
-    </div>
-    </div>
-</body>
+        <input class="input" [(ngModel)]="state" type="text" placeholder="State" name="marks"required>  
+        <a (click)="viewState()"><button type="submit">View</button></a><br><br>
 
-<div class="footer">
-	<footer>
-  		<p>2020 Larsen & Tourbo InfoTech Limited</p>
-	</footer> 
-	</div>
+        <input class="input" [(ngModel)]="sub" type="text" placeholder="Subject" name="marks"required>  
+        <a (click)="viewSub()"><button type="submit">View</button></a><br><br>
+        
+        <br><br> 
+        <section *ngIf="stateData">
+            <div *ngFor="let data of stateData">Name: {{data.name}} <br>City: {{data.city}} <br> State:{{data.state}} <br> Email: {{data.email}} <br> Phone Number: {{data.phoneNo}}<br><br></div> 
+        </section>
+        <section *ngIf="cityData">
+        <div *ngFor="let data of cityData">Name: {{data.name}} <br>City: {{data.city}} <br> State:{{data.state}} <br> Email: {{data.email}} <br> Phone Number: {{data.phoneNo}}<br><br></div> 
+    </section>
+    
+    <section *ngIf="subData">
+        <div *ngFor="let data of subData">Name: {{data.name}} <br>City: {{data.city}} <br> State:{{data.state}} <br> Email: {{data.email}} <br> Phone Number: {{data.phoneNo}}<br><br></div> 
+        
+    </section>  
+        <br><br>  
+   
+        </div>
+        <div class="footer">
+            <ul>
+                <li style= "font-size:85%;"><b>Address:</b><br>Larsen and Toubro Infotech</li>
+                <li style= "font-size:85%;"><b>Email:</b><br>Examin@gmail.com</li>
+                <li style= "font-size:85%;"><b>Contact:</b><br> +91 9876567894</li>
+            </ul>
+        </div>
+        
+      
+    </body>

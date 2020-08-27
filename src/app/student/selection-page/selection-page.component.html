@@ -6,17 +6,17 @@
 
 </head>
 <body class="body"marginheight="0" marginwidth="0" >
-<div>Hello {{useName}} !</div>
 <div class="topsection">
 	<ul>
 		<li><a href="/home" style= "font-size:120%;">ABOUT US</a></li>
 		<li><a href="/support" style= "font-size:120%;">SUPPORT</a></li>
-		<li class="rightalign"><a href="/login" style= "font-size:120%;">LOGOUT</a></li>
+		<!-- <li class="rightalign"><a  style= "font-size:120%;"(click) = "logout()">LOG OUT</a></li> -->
 	</ul>
-</div><br><br><br><br><br>
+</div><br><br>
+<div class="beautifyUser" ><H1>Hello {{useName}} !</H1></div><br>
 <div  class="buttons">
 	<a routerLink="/subjectList" routerLinkActive="active"><button type="submit">Take Test</button></a><br><br>  
-	<a routerLink="/report" routerLinkActive="active"><button type="submit">View Report</button></a><br><br>  
+	<a><button type="submit" (click) = "viewReports()">View Report</button></a><br><br>  
 	<button>View Profile</button><br><br>
 </div>
 

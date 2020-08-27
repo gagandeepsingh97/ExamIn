@@ -34,15 +34,15 @@ export class QuestionComponent implements OnInit {
   ngOnInit(): void {
     this.shareService.fetchSubjectList();
     this.subject = this.shareService.getSubjectValue();
-    this.http.post<any>('http://localhost:8189/getQuestion', 1).subscribe(data=>{this.questions = data;});
+    this.http.post<any>('http://localhost:8189/getQuestion', this.subject).subscribe(data=>{this.questions = data;});
 
     for (let index = 0; index < 10; index++) {
       this.ans[index] = 0;
     }
-    setTimeout(() => this.onSubmit(),10000);//10 sec
+    setTimeout(() => this.onSubmit(),30000);//10 sec
   }
-
   
+
   onItemChange(res){
     if(this.ans[this.count] == null){
       this.ans.push(res);
@@ -57,9 +57,11 @@ export class QuestionComponent implements OnInit {
     data.answes = this.ans;
     data.credentials = [];
     data.credentials.push(sessionStorage.getItem("userId"));
-    data.credentials.push("1");
+    data.credentials.push(sessionStorage.getItem("subjectId"));
     // data.credentials.push(this.subject.toString());
-    this.http.post<any>('http://localhost:8189/saveAnswer', data).subscribe();
+    this.http.post<any>('http://localhost:8189/saveAnswer', data).subscribe(res=>{
+      sessionStorage.setItem("marks",res);
+    });
     sessionStorage.setItem("counter","false");
     window.location.href = "http://localhost:4200/report";
   }

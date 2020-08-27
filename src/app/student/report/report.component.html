@@ -31,34 +31,25 @@
         
     <div class="instructionBody">
             <H1>Thank You!!!</H1>
-            <h1>Yoy marks: {{marks}}</h1>
+            <h1>Your marks: <br>{{marks}}/100</h1>
             
                  <!-- {some value} / {max marks} -->
             
                 <div *ngIf="pass">
-                        You've passed
+                        <h3>You've passed!</h3>
                 </div>
                 <div *ngIf="fail">
-                    Failed
+                    <h3>You've Failed!</h3>
                 </div>
             <br>
-
-  
-              
-            <a routerLink="/subjectList">
-            <button type="button" class="SaveBtn">Save</button>
-            </a>
-            <button type="button" class="logoutBtn" onclick="validateForm()">Next Level</button>
         
     </div>
         <br>
     
-    <div class="subList">
-        <a href="ExamList.html">
-            <button type="button" class="logoutBtn" onclick="validateForm()">Home</button>
-            <button type="button" class="logoutBtn" onclick="validateForm()">LOG OUT</button>
-        </a>
-    </div>
+    <!-- <div class="subList">
+            <button type="button" class="logoutBtn" (click) = "logout()">Home</button>
+            <button type="button" class="logoutBtn" (click) = "logout()">LOG OUT</button>
+    </div> -->
     
         <br>
         <div class="footer">
@@ -68,45 +59,4 @@
         </div>
          
     
-	<!-- <div class= "Header"><H1>ExamIn</H1>
-	
-        <div class= "topnav">	
-        <ul >
-            <a href="ExamList.html">Choose Exam </a>
-            <a href="Instructions.html">Take Test</a> 
-            <a href="Question.html">Question</a> 
-            <a href="Report.html">View Report</a> 
-        </ul>
-        </div>
-        </div>
-        <br>
-        <div class="subList">
-        <a href="Instructions.html">
-            <button type="button" class="subButton" onclick="validateForm()">JAVA</button>
-        </a>
-            <button type="button" class="subButton" onclick="validateForm()">C</button>
-            <button type="button" class="subButton" onclick="validateForm()">C#</button>
-            <button type="button" class="subButton" onclick="validateForm()">SQL</button>
-        <br>
-        <br>
-            <button type="button" class="subButton" onclick="validateForm()">Python</button>
-            <button type="button" class="subButton" onclick="validateForm()">.NET</button>
-        <br>	
-        </div>
-        <br>
-    
-        <div class="subList">
-            <button type="button" class="startbtn" onclick="validateForm()">START TEST</button>
-            <button type="button" class="logoutBtn" onclick="validateForm()">LOG OUT</button>
-        </div>
-    
-        <br>
-        <div class="footer">
-        <footer>
-              <p>&copy 2020 Larsen & Tourbo InfoTech Limited</p>
-        </footer> 
-        </div> -->
-         
-    <!-- 
-        </BODY>
-    </html> -->
+
