@@ -30,16 +30,20 @@
     <br>
         
     <div class="instructionBody">
-    
             <H1>Thank You!!!</H1>
+            <h1>Yoy marks: {{marks}}</h1>
             
-            <p>	Your score 
                  <!-- {some value} / {max marks} -->
             
-                You have cleared the exam. 
+                <div *ngIf="pass">
+                        You've passed
+                </div>
+                <div *ngIf="fail">
+                    Failed
+                </div>
             <br>
 
-        </p>
+  
               
             <a routerLink="/subjectList">
             <button type="button" class="SaveBtn">Save</button>

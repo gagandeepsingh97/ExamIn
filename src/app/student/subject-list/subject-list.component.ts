@@ -20,11 +20,12 @@ export class SubjectListComponent implements OnInit {
     });
   }
   setSubjectId(res) {
-    this.tempString = res;
+   this.tempString = res;
     // this.http.post<any>('http://localhost:8189/login', res).subscribe(result=>{
     //   if(result)
     //     this.subjectId = result;
     // });
+ //   this.shareService.id=1;
   }
   
 

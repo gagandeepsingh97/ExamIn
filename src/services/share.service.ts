@@ -4,6 +4,7 @@ import { EventEmitter, Injectable} from '@angular/core';
   })
 export class shareService {
     private subjectSelector: number;
+    id:number;
     private fetchSubject: EventEmitter<boolean> = new EventEmitter<boolean>();
     getSubjectValue() {
         return this.subjectSelector;
