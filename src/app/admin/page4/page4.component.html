@@ -17,8 +17,8 @@
             <h2>Please enter the field for viewing student details</h2>
         </div>
         <div class="buttons">
-            <input class="input" type="text" placeholder="Marks" name="marks"required>
-            <a routerLink="/subjectList" routerLinkActive="active"><button type="submit">View</button></a><br><br> 
+            <input class="input" [(ngModel)]="marks" type="text" placeholder="Marks" name="marks"required>
+            <a (click)="viewMarks()"><button type="submit">View</button></a><br><br> 
 
             <input class="input" [(ngModel)]="city" type="text" placeholder="City" name="marks"required>
         <a (click)="viewCity()"><button type="submit">View</button></a><br><br>
@@ -39,8 +39,10 @@
     
     <section *ngIf="subData">
         <div *ngFor="let data of subData">Name: {{data.name}} <br>City: {{data.city}} <br> State:{{data.state}} <br> Email: {{data.email}} <br> Phone Number: {{data.phoneNo}}<br><br></div> 
-        
     </section>  
+    <section *ngIf="marksData">
+        <div *ngFor="let data of marksData">Name: {{data.name}} <br>City: {{data.city}} <br> State:{{data.state}} <br> Email: {{data.email}} <br> Phone Number: {{data.phoneNo}}<br><br></div> 
+    </section>
         <br><br>  
    
         </div>

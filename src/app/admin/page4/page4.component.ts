@@ -12,6 +12,8 @@ export class Page4Component implements OnInit {
   stateData: any;
   sub: string;
   subData: any;
+  marks: string;
+  marksData: any;
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +23,13 @@ export class Page4Component implements OnInit {
     this.http.post<any>('http://localhost:8189/searchStudentByCity', this.city).subscribe(res=>{
       if(res)
       this.cityData = res;
+    });
+  }
+
+  viewMarks(){
+    this.http.post<any>('http://localhost:8189/searchStudentByMarks', this.marks).subscribe(res=>{
+      if(res)
+      this.marksData = res;
     });
   }
 
