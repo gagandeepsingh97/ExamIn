@@ -37,7 +37,7 @@ export class ReportComponent implements OnInit {
   }
 
   logout():void {
-    // sessionStorage.clear();
+    sessionStorage.clear();
     // this.router.navigate(['/home']);
     window.location.href = "http://localhost:4200/home";
   }
